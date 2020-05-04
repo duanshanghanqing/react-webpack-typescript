@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as reactMixin from 'react-mixin';
 import mixins from '../../mixins';
-import { Button, Icon } from 'antd';
-import './index.less';
+import { Button } from 'antd';
+// import './index.less';
 import './index.css';
 
 // 在使用 require 语法前增加一个声明“declare const require: any”。
@@ -30,7 +30,6 @@ export default class extends React.Component<{
           Hello
         </p>
         <Button type="primary">Hello</Button>
-        <Icon type="step-backward" />
         <video src={require('../../assets/media/movie.ogg')} controls={true}>
           您的浏览器不支持 video 标签。
         </video>

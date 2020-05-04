@@ -1,7 +1,7 @@
 import Root from '../containers/Root';
 import Home from '../containers/Home';
-import CheckboxWithLabel from '../containers/CheckboxWithLabel';
-import Counter from '../containers/Counter';
+// import CheckboxWithLabel from '../containers/CheckboxWithLabel';
+// import Counter from '../containers/Counter';
 
 export default [
   {
@@ -12,14 +12,14 @@ export default [
         exact: true,
         component: Home,
       },
-      {
-        path: '/checkboxWithLabel',
-        component: CheckboxWithLabel,
-      },
-      {
-        path: '/counter',
-        component: Counter,
-      }
+      // {
+      //   path: '/checkboxWithLabel',
+      //   component: CheckboxWithLabel,
+      // },
+      // {
+      //   path: '/counter',
+      //   component: Counter,
+      // }
     ],
   },
 ];

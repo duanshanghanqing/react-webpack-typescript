@@ -4,8 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 import configureStore from './store/configureStore';
 import routes from './routes';
-import { LocaleProvider } from 'antd';
-import zhCN from 'antd/lib/locale-provider/zh_CN';
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/es/locale/zh_CN';
 import 'antd/dist/antd.min.css';
 
 const store = configureStore();
@@ -13,13 +13,13 @@ const store = configureStore();
 export default class extends React.Component {
   render() {
     return (
-      <LocaleProvider locale={zhCN}>
+      <ConfigProvider locale={zhCN}>
         <Provider store={store}>
           <Router basename="/fmy">
             {renderRoutes(routes)}
           </Router>
         </Provider>
-      </LocaleProvider>
+      </ConfigProvider>
     );
   }
 }
