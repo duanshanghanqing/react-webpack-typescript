@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as reactMixin from 'react-mixin';
 import mixins from '../../mixins';
-import { Button } from 'antd';
+import { Button, DatePicker } from 'antd';
 // import './index.less';
 import './index.css';
 
@@ -30,6 +30,8 @@ export default class extends React.Component<{
           Hello
         </p>
         <Button type="primary">Hello</Button>
+        <Button>Button</Button>
+        <DatePicker />
         <video src={require('../../assets/media/movie.ogg')} controls={true}>
           您的浏览器不支持 video 标签。
         </video>

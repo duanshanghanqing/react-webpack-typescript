@@ -7,6 +7,7 @@ import routes from './routes';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
 import 'antd/dist/antd.min.css';
+// import * as moment from 'moment';
 
 const store = configureStore();
 
