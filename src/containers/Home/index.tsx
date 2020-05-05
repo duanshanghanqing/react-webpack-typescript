@@ -3,7 +3,7 @@ import * as reactMixin from 'react-mixin';
 import mixins from '../../mixins';
 import { Button, DatePicker } from 'antd';
 import LikeButton from './LikeButton';
-// import './index.less';
+import './index.less';
 import './index.css';
 
 // 在使用 require 语法前增加一个声明“declare const require: any”。
