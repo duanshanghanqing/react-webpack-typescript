@@ -1,8 +1,9 @@
 import * as React from 'react';
-const { useState } = React;
+import { FC, useState } from 'react';
 
-const LikeButton: React.FC  = () => {
+const UseState: FC  = () => {
     const [like, setLike] = useState(0);
+
     return (
         <button onClick={ (e) => { setLike(like + 1); } }>
             {like}
@@ -10,4 +11,4 @@ const LikeButton: React.FC  = () => {
     );
 };
 
-export default LikeButton;
+export default UseState;

@@ -1,8 +1,10 @@
 import * as React from 'react';
 import * as reactMixin from 'react-mixin';
 import mixins from '../../mixins';
-import { Button, DatePicker } from 'antd';
-import LikeButton from './LikeButton';
+import { Button } from 'antd';
+import UseState from './UseState';
+import UseEffect from './UseEffect';
+import MousePosition from './MousePosition';
 import './index.less';
 import './index.css';
 
@@ -25,18 +27,13 @@ export default class extends React.Component<{
   render() {
     return (
       <div className="Home">
-        <img src={require('../../assets/images/logo.png')} alt="" />
-        <p className="title">
-          {' '}
-          Hello
-        </p>
-        <Button type="primary">Hello</Button>
-        <Button>Button</Button>
-        <LikeButton />
-        <DatePicker />
-        <video src={require('../../assets/media/movie.ogg')} controls={true}>
-          您的浏览器不支持 video 标签。
-        </video>
+        <Button>antd</Button>
+        <br /><br />
+        <UseState />
+        <br /><br />
+        <UseEffect />
+        <br /><br />
+        <MousePosition />
       </div>
     );
   }
