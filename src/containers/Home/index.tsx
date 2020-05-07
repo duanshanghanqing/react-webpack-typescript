@@ -6,6 +6,7 @@ import UseEffect from './UseEffect';
 import MousePosition from './MousePosition';
 import URLLoader from './URLLoader';
 import UseRef from './UseRef';
+import UseContext from './UseContext';
 import './index.less';
 import './index.css';
 
@@ -37,6 +38,8 @@ export default class extends React.Component<{
         <URLLoader />
         <br />
         <UseRef />
+        <br />
+        <UseContext />
       </div>
     );
   }
