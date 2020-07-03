@@ -30,12 +30,7 @@ module.exports = merge(webpackbaseconfig, {
                         }
                     },
                     { loader: 'postcss-loader' },
-                    {
-                        loader: 'less-loader',
-                        options: {
-                            javascriptEnabled: true
-                        }
-                    }
+                    { loader: 'less-loader' }
                 ]
             },
             {

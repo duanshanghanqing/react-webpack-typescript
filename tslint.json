@@ -19,6 +19,7 @@
         "no-empty-interface": false,
         "member-access": false,
         "strict-boolean-expressions": false,
-        "variable-name": false
+        "variable-name": false,
+        "jsx-no-lambda": false
     }
 }

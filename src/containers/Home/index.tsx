@@ -1,8 +1,13 @@
 import React from 'react';
 import reactMixin from 'react-mixin';
 import mixins from '../../mixins';
-import { Button, DatePicker } from 'antd';
-// import './index.less';
+import UseState from './UseState';
+import UseEffect from './UseEffect';
+import MousePosition from './MousePosition';
+import URLLoader from './URLLoader';
+import UseRef from './UseRef';
+import UseContext from './UseContext';
+import './index.less';
 import './index.css';
 
 // 在使用 require 语法前增加一个声明“declare const require: any”。
@@ -24,17 +29,17 @@ export default class extends React.Component<{
   render() {
     return (
       <div className="Home">
-        <img src={require('../../assets/images/logo.png')} alt="" />
-        <p className="title">
-          {' '}
-          Hello
-        </p>
-        <Button type="primary">Hello</Button>
-        <Button>Button</Button>
-        <DatePicker />
-        <video src={require('../../assets/media/movie.ogg')} controls={true}>
-          您的浏览器不支持 video 标签。
-        </video>
+        <UseState />
+        <br /><br />
+        <UseEffect />
+        <br /><br />
+        <MousePosition />
+        <br />
+        <URLLoader />
+        <br />
+        <UseRef />
+        <br />
+        <UseContext />
       </div>
     );
   }
