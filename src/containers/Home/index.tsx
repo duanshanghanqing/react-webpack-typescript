@@ -1,5 +1,5 @@
-import * as React from 'react';
-import * as reactMixin from 'react-mixin';
+import React from 'react';
+import reactMixin from 'react-mixin';
 import mixins from '../../mixins';
 import { Button, DatePicker } from 'antd';
 // import './index.less';

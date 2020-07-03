@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
@@ -7,7 +7,6 @@ import routes from './routes';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
 import 'antd/dist/antd.min.css';
-// import * as moment from 'moment';
 
 const store = configureStore();
 
