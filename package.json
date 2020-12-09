@@ -31,7 +31,6 @@
     "@types/react-dom": "^16.9.7",
     "@types/react-redux": "^7.1.7",
     "@types/react-router-dom": "^5.1.5",
-    "autoprefixer": "^9.7.6",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
@@ -40,6 +39,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
     "rimraf": "^3.0.2",
     "style-loader": "^1.2.1",
     "ts-loader": "^7.0.2",
@@ -52,5 +52,17 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.1%",
+      "not dead",
+      "not op_mini all"
+    ]
   }
 }
