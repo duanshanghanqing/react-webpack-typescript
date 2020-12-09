@@ -18,7 +18,16 @@ module.exports = merge(webpackbaseconfig, {
                             url: true,
                         }
                     },
-                    { loader: 'postcss-loader' }
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            ident: 'postcss',
+                            plugins: () => [
+                                // postcss的插件
+                                require('postcss-preset-env')(),
+                            ]
+                        }
+                    },
                 ]
             },
             {
@@ -31,7 +40,16 @@ module.exports = merge(webpackbaseconfig, {
                             url: true,
                         }
                     },
-                    { loader: 'postcss-loader' },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            ident: 'postcss',
+                            plugins: () => [
+                                // postcss的插件
+                                require('postcss-preset-env')(),
+                            ]
+                        }
+                    },
                     { loader: 'less-loader' }
                 ]
             },
